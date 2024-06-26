@@ -1,5 +1,5 @@
 
-const token = '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';
+const token = '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';
 getApiGitHub();
 
 function getApiGitHub() {
