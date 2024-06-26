@@ -1,0 +1,108 @@
+
+hr {
+  border-color: black;
+  border: 1px solid black;
+}
+
+h1 #perfil{
+  border-bottom: none;
+  margin-bottom: none;
+}
+.entypo-social--twitter, .entypo-social--github{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  margin-left: 20px;
+  
+}
+
+.entypo-social--twitter1{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  margin-left: 20px;
+}
+.ola {
+  font-size: 14px;
+}
+.ola1 img{
+  width: 20px;
+  height: 20px;
+}
+
+.nav-br1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo{
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-list{
+  display: flex;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.mobile-menu-icon{ 
+  display:none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+
+ @media (min-width:100px) and (max-width:730px ) {
+ .tst3 {
+    font-size: 15px;
+  }
+  .nav-item{
+    display: none;
+  }
+  .mobile-menu-icon{
+    display: block;
+  }
+
+  .mobile-menu-icon buttom{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column ;
+    padding-bottom: 10px;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding: 20px;
+  }
+
+  .open{
+    display: block;
+  }
+
+ }
+

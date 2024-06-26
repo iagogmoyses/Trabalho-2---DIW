@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/assets/css/style.css">
+    <title>Trabalho DIW</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+    function menuShow() {
+        let menuMobile = document.querySelector('.mobile-menu');
+        if (menuMobile.classList.contains('open')) {
+            menuMobile.classList.remove('open');
+            document.querySelector('.icon').src = "assets/img/menu_white_36dp.svg";
+        } else {
+            menuMobile.classList.add('open');
+            document.querySelector('.icon').src = "assets/img/close_white_36dp.svg";
+        }
+    }
+</script>
+<script src="../public/assets/js/javascript.js"></script>
+
+<body>
+    <Header>
+        <div class="container-fluid">
+            <div class="row">
+               
+                <div class="col-md-0 col-sm-0 main-content">
+                <nav class="main-navigation">
+                  <div class="navbar-header animated fadeInUp">
+            <div class="nav-list"></div>
+            <ul>
+                <li class="nav-item"><a href="#conteudo1" class="nav-link">Repositorios</a></li>
+                <li class="nav-item"><a href="#conteudo2" class="nav-link">Sugeridos</a></li>
+                <li class="nav-item"><a href="#conteudo3" class="nav-link">Amigos</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()" style="background-color: black;"><img src="assets/img/menu_white_36dp.svg"
+                        alt="" class="icon"></button>
+            </div>
+        </nav>
+
+
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#conteudo1" class="nav-link">Repositorios</a></li>
+                <li class="nav-item"><a href="#conteudo2" class="nav-link">Sugeridos</a></li>
+                <li class="nav-item"><a href="#conteudo3" class="nav-link">Amigos</a></li>
+            </ul>
+        </div>
+    </Header>
+    <main>
+
+        <div class="container-fluid w-75 m-auto">
+
+            <h1 id="perfil">Perfil</h1>
+            <hr>
+            <div class="row p-2">
+                <div class="col-lg-3 col-sm-12">
+                    <img id="img" alt="Foto-rosto" class="img-thumbnail h-100 border-2">
+                </div>
+                <div class="col-lg-9 col-sm-12 ">
+                    <h3 class="nome text-primary m-1"></h3>
+                    <p class="bio"></p>
+                    <d class="row">
+                        <div class="col-9">
+                            <p class="mb-1"><strong>Local: </strong><span id="local"></span></p>
+                            <p class="mb-1"><strong>Site: </strong><a id="blog"></a></p>
+                            <p class="mb-1"><Strong>GitHub: </Strong><a id="git"></a></p>
+                            <div id="redesocial"></div>
+                        </div>
+                        <div class="col-3"><span><img src="../public/assets/img/pessoaaaa.png" alt=""
+                                    style=" margin:5px; width: 20px; height: 20px;"><span id="follo"></span></span> <br>
+
+                        </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+        <div class="container-fluid w-75 m-auto" id="conteudo1">
+
+            <h2 id="reponum"></h2>
+            <hr>
+            <div class="row p-2 justify-content-center" id="content-main">
+
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid w-75 m-auto" id="conteudo2">
+            <h2>Conteúdo sugerido</h2>
+            <hr>
+            <div class="row p-2 justify-content-center">
+                <div class="">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators" id="indicadores-do-carrossel"></div>
+                        <div class="carousel-inner" id="itens-do-carrossel"></div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev" style="height: 360px; width: 40px; margin: auto;">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"
+                                style="height: 300px; width: 30px; margin: auto;"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next" style="height: 360px; width: 40px; margin: auto;">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"
+                                style="height: 300px; width: 30px; margin: auto;"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $.getJSON('http://localhost:3000/carousel', function (dados) {
+                            let indicadores = '';
+                            let itens = '';
+
+                            dados.forEach((item, indice) => {
+                                let classeAtiva = indice === 0 ? 'active' : '';
+                                indicadores += `<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${indice}" class="${classeAtiva}" aria-current="true" aria-label="Slide ${indice + 1}"></button>`;
+                                itens += `
+                                        <div class="carousel-item ${classeAtiva}">
+                                            <img src="${item.image}" class="d-block w-100" alt="${item.title}" style="height: 360px; width: 900px">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <span style="background-color: rgba(0, 0, 0, 0.800);padding: 3px; border-radius: 5px; font-size: 20px;">${item.title}</span><br><br>
+                                                <span style="background-color: rgba(0, 0, 0, 0.419);padding: 3px; border-radius: 5px">${item.description}</span><br>
+                                                <a href="${item.link}" target="_blank" class="btn btn-primary mt-2">Saiba mais</a>
+                                            </div>
+                                        </div>
+                                    `;
+                            });
+
+                            $('#indicadores-do-carrossel').html(indicadores);
+                            $('#itens-do-carrossel').html(itens);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="container-fluid w-75 m-auto pt-3">
+            <h2>Colegas de Trabalho</h2>
+            <hr>
+            <div class="row" id="content-friends">
+            </div>
+        </div>
+        <div class="container-fluid" id="conteudo3">
+            <div class="row">
+                <div class="col-12 bg-dark text-white p-2" style="text-align: center;">
+                    <h1 class="nome"></h1>
+                    <p class="bio"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

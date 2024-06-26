@@ -1,0 +1,39 @@
+{
+    "carousel": [
+      {
+        "id": 1,
+        "image": "https://moonbh.com.br/wp-content/uploads/2023/03/pedrinho-compra-20-cruzeiro-ronaldo.webp",
+        "title": "Pedrinho anuncia compra da SAF do Cruzeiro Esporte Clube!",
+        "description": "Empresário confirma compra da SAF do Cruzeiro, reunião com Ronaldo e volta de Alexandre Mattos",
+        "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2024/04/29/empresario-confirma-compra-do-cruzeiro-e-retorno-de-alexandre-mattos-ao-clube.ghtml"
+      },
+      {
+        "id": 2,
+        "image": "https://soudepalmas.com.br/wp-content/uploads/2024/03/dorival_jr_apresentacao_cbf_Easy-Resize.com_.jpg",
+        "title": "Dorival Junior anuncia convocação da seleção brasileira para a Copa América",
+        "description": "Convocados da Seleção: veja lista de Dorival Júnior para Copa América e amistosos",
+        "link": "https://ge.globo.com/futebol/selecao-brasileira/noticia/2024/05/10/convocados-da-selecao-veja-a-lista-de-dorival-junior-para-copa-america-e-amistosos.ghtml"
+      },
+      {
+        "id": 3,
+        "image": "https://s2-ge.glbimg.com/rVlJwMDxJe6gCNodEys3iX5bjqU=/0x0:5269x3340/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/0/a/2vj9k2RiGgBiFjCtGJUQ/gettyimages-1452535836.jpg",
+        "title": "Botafogo e Atlético-MG negociam com Lyanco, do Southampton",
+        "description": "Zagueiro quer voltar ao Brasil. Decisão está nas mãos do jogador",
+        "link": "https://ge.globo.com/futebol/times/botafogo/noticia/2024/06/26/botafogo-faz-proposta-pelo-zagueiro-lyanco-do-southampton.ghtml"
+      },
+      {
+        "id": 4,
+        "image": "https://s2-ge.glbimg.com/C3vPAcEhw5JcPxguPFLOzKZLpSc=/0x0:1600x1200/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/9/G/Xree6nRkCBBD6pLr7Szg/whatsapp-image-2024-06-26-at-13.14.43.jpeg",
+        "title": "Acertado com o Cruzeiro, Walace chega a BH para exames e assinatura de contrato",
+        "description": "Ex-Udinese, volante vai assinar contrato de quatro anos e meio com o Cruzeiro",
+        "link": "https://ge.globo.com/futebol/times/cruzeiro/noticia/2024/06/26/acertado-com-o-cruzeiro-walace-chega-a-bh-para-exames-e-assinatura-de-contrato.ghtml"
+      },
+      {
+        "id": 5,
+        "image": "https://i0.statig.com.br/bancodeimagens/bh/gp/5i/bhgp5ie0o3ymyh1r3461gnr3w.jpg",
+        "title": "Messi revela desconforto muscular: ‘Espero que não seja nada grave’",
+        "description": "Argentina enfrentou o Chile na noite de ontem pela Copa América",
+        "link": "https://esporte.ig.com.br/parceiros/jogada10/2024-06-26/messi-revela-desconforto-muscular--espero-que-nao-seja-nada-grave.html"
+      }
+    ]
+  }
